@@ -1,9 +1,8 @@
-# For example, my configuration is this:
-url: https://hackscsu.com
-enforce_ssl: hackscsu.com
+url: http://csciclub.github.io
+baseurl: /hackscsu
 
 # Site settings
-title: CloudHacks
+title: HackSCSU
 email: your-email@domain.com
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 
