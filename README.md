@@ -28,3 +28,12 @@ View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-th
 
 =========
 For more details, read [documentation](http://jekyllrb.com/)
+
+# Running in a docker container
+
+```
+docker build . -t hackscsu-jekyll
+
+# run container and only expose on your pc
+docker run -p "0.0.0.o:4000:4000" hackscsu-jekyll:latest
+```
