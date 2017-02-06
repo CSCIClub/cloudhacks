@@ -1,3 +1,4 @@
 {% include css/bootstrap.min.css %}
+{% include css/bootstrap-select.css %}
 {% include css/agency.css %}
 {{ content }}
