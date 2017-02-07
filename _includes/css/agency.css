@@ -942,6 +942,7 @@ button.close-modal {
 
 .bootstrap-select>.dropdown-toggle.bs-placeholder, .bootstrap-select>.dropdown-toggle.bs-placeholder:active, .bootstrap-select>.dropdown-toggle.bs-placeholder:focus, .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
     color: #a9a9a9;
+    background-color: #fff;
 }
 
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
@@ -950,9 +951,20 @@ button.close-modal {
     border: 2px solid #dce4ec;
 }
 
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+    color: #a9a9a9;
+    /* background-color: #d4d4d4; */
+    border: 2px solid #dce4ec;
+}
+
 input[type="file"] {
     opacity: 0;
     height: 50px;
     max-width: 5px;
     position: absolute;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
 }
