@@ -43,19 +43,19 @@
         <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <div class="container">
         <div class="centered-form">
-              <form name="sentMessage" id="contactForm">
+              <form name="registration-form" id="regForm">
                   <div class="row">
                       <div class="col-md-6">
                           <div class="control-group form-group">
                               <div></div>
-                              <input type="text" class="form-control  input-lg" placeholder="First Name *" id="fname" required>
+                              <input type="text" class="form-control  input-lg" placeholder="First Name" id="fname" required>
                               <div></div>
                           </div>
                       </div>
                       <div class="col-md-6">
                           <div class="form-group">
                               <div></div>
-                              <input type="text" class="form-control  input-lg" placeholder="Last Name *" id="lname" required>
+                              <input type="text" class="form-control  input-lg" placeholder="Last Name" id="lname" required>
                           </div>
                       </div>
                   </div>
@@ -63,7 +63,7 @@
                       <div class="col-md-6">
                           <div class="input-group form-group">
                               <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope"></i></span>
-                              <input type="text" id="email" class="form-control  input-lg" placeholder="Email Address *" aria-describedby="sizing-addon1" required>
+                              <input type="text" id="emailAdd" class="form-control  input-lg" placeholder="Email Address" aria-describedby="sizing-addon1" required>
                           </div>
                       </div>
                       <div class="col-md-6">
@@ -76,26 +76,23 @@
                   <div class="row">
                       <div class="col-md-6">
                           <div class="form-group">
-                              <select class="selectpicker input-lg form-control" title="Select a School" data-live-search="true" required>
+                              <select id="school" class="selectpicker input-lg form-control" title="Select a School" data-live-search="true" required>
                                   <option value="University of Illinois Urbana - Champaign"> University Of Illinois Urbana - Champaign </option><option value="Anna University"> Anna University </option><option value="Appalachian State University"> Appalachian State University </option><option value="Arizona State University"> Arizona State University </option><option value="Babson College"> Babson College </option><option value="Ball State University"> Ball State University </option><option value="Bard College"> Bard College </option><option value="Barnard College"> Barnard College </option><option value="Baruch College"> Baruch College </option><option value="Bellevue College"> Bellevue College </option><option value="Benha University"> Benha University </option><option value="Binghamton University"> Binghamton University </option><option value="Boise State University"> Boise State University </option><option value="Boston College"> Boston College </option><option value="Boston University"> Boston University </option><option value="Brown University"> Brown University </option><option value="Bryn Mawr College"> Bryn Mawr College </option><option value="Bucknell University"> Bucknell University </option><option value="California Institute of Technology"> California Institute Of Technology </option><option value="California Polytechnic State University"> California Polytechnic State University </option><option value="California State University-Long Beach"> California State University-long Beach </option><option value="Carleton College"> Carleton College </option><option value="Carnegie Mellon University"> Carnegie Mellon University </option><option value="Case Western Reserve University"> Case Western Reserve University </option><option value="Clark University"> Clark University </option><option value="Colegio Americano de Torren"> Colegio Americano De Torren </option><option value="College of Dupage"> College Of Dupage </option><option value="College of William and Mary"> College Of William And Mary </option><option value="Columbia University"> Columbia University </option><option value="Concordia University Wisconsin"> Concordia University Wisconsin </option><option value="Cornell University"> Cornell University </option><option value="DePaul University"> Depaul University </option><option value="DePauw University"> Depauw University </option><option value="Diablo Valley College"> Diablo Valley College </option><option value="Drexel University"> Drexel University </option><option value="Duke University"> Duke University </option><option value="Earlham College"> Earlham College </option><option value="Eastern Michigan University"> Eastern Michigan University </option><option value="Embry-Riddle Aeronautical University"> Embry-riddle Aeronautical University </option><option value="Emory University"> Emory University </option><option value="ETH Zurich"> Eth Zurich </option><option value="Florida Institute of Technology"> Florida Institute Of Technology </option><option value="Florida International University"> Florida International University </option><option value="Florida State University"> Florida State University </option><option value="Foothill College"> Foothill College </option><option value="George Mason University"> George Mason University </option><option value="George Washington University"> George Washington University </option><option value="Georgia Institute of Technology"> Georgia Institute Of Technology </option><option value="Georgia State University"> Georgia State University </option><option value="Grinnell College"> Grinnell College </option><option value="Harper College"> Harper College </option><option value="Harvard University"> Harvard University </option><option value="Howard University"> Howard University </option><option value="Illinois Institute of Technology"> Illinois Institute Of Technology </option><option value="Illinois State University"> Illinois State University </option><option value="Illinois Wesleyan University"> Illinois Wesleyan University </option><option value="Indiana University - Bloomington"> Indiana University - Bloomington </option><option value="Indiana University - Purdue University Indianapolis"> Indiana University - Purdue University Indianapolis </option><option value="Iowa State University"> Iowa State University </option><option value="Kansas State University"> Kansas State University </option><option value="Kent State University"> Kent State University </option><option value="Knox College"> Knox College </option><option value="Lehigh University"> Lehigh University </option><option value="Lewis University"> Lewis University </option><option value="Liceo Tecnologico Scientifico Salesiani Don Bosco"> Liceo Tecnologico Scientifico Salesiani Don Bosco </option><option value="Lindenwood University"> Lindenwood University </option><option value="Los Angeles Pierce College"> Los Angeles Pierce College </option><option value="Marist College"> Marist College </option><option value="Marquette University"> Marquette University </option><option value="Massachusetts Institute of Technology"> Massachusetts Institute Of Technology </option><option value="McGill University"> Mcgill University </option><option value="McMaster University"> Mcmaster University </option><option value="Messiah College"> Messiah College </option><option value="Miami University"> Miami University </option><option value="Michigan State University"> Michigan State University </option><option value="Michigan Technological University"> Michigan Technological University </option><option value="Middle Tennessee State University"> Middle Tennessee State University </option><option value="Milwaukee School of Engineering"> Milwaukee School Of Engineering </option><option value="Mission College"> Mission College </option><option value="Mississippi State University"> Mississippi State University </option><option value="Missouri State University"> Missouri State University </option><option value="Monmouth College"> Monmouth College </option><option value="New York University"> New York University </option><option value="New York University Shanghai"> New York University Shanghai </option><option value="North Carolina State University"> North Carolina State University </option><option value="North Dakota State University"> North Dakota State University </option><option value="Northeastern Illinois University"> Northeastern Illinois University </option><option value="Northeastern University"> Northeastern University </option><option value="Northern Illinois University"> Northern Illinois University </option><option value="Northwestern University"> Northwestern University </option><option value="Notre Dame University"> Notre Dame University </option><option value="Oakton Community College"> Oakton Community College </option><option value="Ohio State University"> Ohio State University </option><option value="Ohlone College"> Ohlone College </option><option value="Oregon State University"> Oregon State University </option><option value="Parkland College"> Parkland College </option><option value="Pennsylvania State University"> Pennsylvania State University </option><option value="Prince George's Community College"> Prince George's Community College </option><option value="Princeton University"> Princeton University </option><option value="Purdue University"> Purdue University </option><option value="Queen's University"> Queen's University </option><option value="Rensselaer Polytechnic Institute"> Rensselaer Polytechnic Institute </option><option value="Rhode Island School of Design"> Rhode Island School Of Design </option><option value="Rice University"> Rice University </option><option value="Rochester Institute of Technology"> Rochester Institute Of Technology </option><option value="Rose-Hulman Institute of Technology"> Rose-hulman Institute Of Technology </option><option value="Rutgers University"> Rutgers University </option><option value="Saginaw Valley State University"> Saginaw Valley State University </option><option value="San Jose State University"> San Jose State University </option><option value="Santa Clara University"> Santa Clara University </option><option value="Savannah College of Art and Design"> Savannah College Of Art And Design </option><option value="School of Visual Arts"> School Of Visual Arts </option><option value="Southern Connecticut State University"> Southern Connecticut State University </option><option value="Southern Illinois University - Carbondale"> Southern Illinois University - Carbondale </option><option value="Southern Illinois University - Edwardsville"> Southern Illinois University - Edwardsville </option><option value="Southern Methodist University"> Southern Methodist University </option><option value="St. Cloud State University"> St. Cloud State University </option><option value="St. John's University"> St. John's University </option><option value="St. Louis University"> St. Louis University </option><option value="Stanford University"> Stanford University </option><option value="Stetson University"> Stetson University </option><option value="Stevens Institute of Technology"> Stevens Institute Of Technology </option><option value="Stony Brook University"> Stony Brook University </option><option value="SUNY Albany"> Suny Albany </option><option value="SUNY Stony Brook University"> Suny Stony Brook University </option><option value="Tallahassee Community College"> Tallahassee Community College </option><option value="Tecnolgico de Monterrey (ITESM)"> Tecnolgico De Monterrey (Itesm) </option><option value="Temple University"> Temple University </option><option value="Texas A&amp;M University"> Texas A&amp;m University </option><option value="The New School/Parsons"> The New School/parsons </option><option value="The University of North Carolina at Chapel Hill"> The University Of North Carolina At Chapel Hill </option><option value="The University of Texas at Dallas"> The University Of Texas At Dallas </option><option value="Tufts University"> Tufts University </option><option value="Tulsa Community College"> Tulsa Community College </option><option value="University College London (UCL)"> University College London (Ucl) </option><option value="University of Arizona"> University Of Arizona </option><option value="University of British Columbia"> University Of British Columbia </option><option value="University of Buffalo"> University Of Buffalo </option><option value="University of Calfornia - Los Angeles"> University Of Calfornia - Los Angeles </option><option value="University of California - Berkeley"> University Of California - Berkeley </option><option value="University of California - Davis"> University Of California - Davis </option><option value="University of California - Irvine"> University Of California - Irvine </option><option value="University of California - Merced"> University Of California - Merced </option><option value="University of California - San Diego"> University Of California - San Diego </option><option value="University of California - Santa Barbara"> University Of California - Santa Barbara </option><option value="University of California - Santa Cruz"> University Of California - Santa Cruz </option><option value="University of Central Florida"> University Of Central Florida </option><option value="University of Chicago"> University Of Chicago </option><option value="University of Cincinnati"> University Of Cincinnati </option><option value="University of Colorado - Boulder"> University Of Colorado - Boulder </option><option value="University of Florida"> University Of Florida </option><option value="University of Georgia"> University Of Georgia </option><option value="University of Houston"> University Of Houston </option><option value="University of Illinois - Chicago"> University Of Illinois - Chicago </option><option value="University of Illinois - Springfield"> University Of Illinois - Springfield </option><option value="University of Iowa"> University Of Iowa </option><option value="University of Kansas"> University Of Kansas </option><option value="University of Louisiana at Monroe"> University Of Louisiana At Monroe </option><option value="University of Louisville"> University Of Louisville </option><option value="University of Maryland"> University Of Maryland </option><option value="University of Maryland-Baltimore County"> University Of Maryland-baltimore County </option><option value="University of Massachusetts"> University Of Massachusetts </option><option value="University of Massachusetts Amherst"> University Of Massachusetts Amherst </option><option value="University of Michigan - Ann Arbor"> University Of Michigan - Ann Arbor </option><option value="University of Minnesota - Twin Cities"> University Of Minnesota - Twin Cities </option><option value="University of Missouri"> University Of Missouri </option><option value="University of Missouri - Kansas City"> University Of Missouri - Kansas City </option><option value="University of Nebraska - Lincoln"> University Of Nebraska - Lincoln </option><option value="University of North Carolina at Chapel Hill"> University Of North Carolina At Chapel Hill </option><option value="University of North Texas"> University Of North Texas </option><option value="University of Notre Dame"> University Of Notre Dame </option><option value="University of Oxford"> University Of Oxford </option><option value="University of Pennsylvania"> University Of Pennsylvania </option><option value="University of Pittsburgh"> University Of Pittsburgh </option><option value="University of Puerto Rico - Bayamon"> University Of Puerto Rico - Bayamon </option><option value="University of Rochester"> University Of Rochester </option><option value="University of San Francisco"> University Of San Francisco </option><option value="University of Southern California"> University Of Southern California </option><option value="University of Texas - Austin"> University Of Texas - Austin </option><option value="University of Texas - Dallas"> University Of Texas - Dallas </option><option value="University of Texas Rio Grande Valley"> University Of Texas Rio Grande Valley </option><option value="University of Toledo"> University Of Toledo </option><option value="University of Toronto"> University Of Toronto </option><option value="University of Tulsa"> University Of Tulsa </option><option value="University of Virginia"> University Of Virginia </option><option value="University of Washington"> University Of Washington </option><option value="University of Waterloo"> University Of Waterloo </option><option value="University of Windsor"> University Of Windsor </option><option value="University of Wisconsin - Madison"> University Of Wisconsin - Madison </option><option value="University of Wisconsin - Milwaukee"> University Of Wisconsin - Milwaukee </option><option value="University of Wisconsin - Platteville"> University Of Wisconsin - Platteville </option><option value="University Texas - Dallas"> University Texas - Dallas </option><option value="Vanderbilt University"> Vanderbilt University </option><option value="Villanova University"> Villanova University </option><option value="Virginia Polytechnic Institute and State University (Virginia Tech)"> Virginia Polytechnic Institute And State University (Virginia Tech) </option><option value="Washington University in St. Louis"> Washington University In St. Louis </option><option value="Westminster College"> Westminster College </option><option value="Wheaton College"> Wheaton College </option><option value="Worcester Polytechnic Institute"> Worcester Polytechnic Institute </option><option value="Wright State University"> Wright State University </option><option value="Yale University"> Yale University </option><option value="Other"> Other </option>
                               </select>
                           </div>
                       </div>
                       <div class="col-md-6">
                           <div class="form-group">
-                              <input type="text" id="major" class="form-control  input-lg" placeholder="Major" required>
+                              <input type="text" id="majorSub" class="form-control  input-lg" placeholder="Major" required>
                           </div>
                       </div>
-                      <!-- <div class="col-md-6">
-                          <div class="input-group form-group">
-                              <input type="text" id="gradYear" class="form-control" placeholder="Grad Year" required="">
-                          </div>
-                      </div> -->
                   </div>
                   <div class="row">
                       <div class="col-md-6">
                           <div class="form-group">
-                              <input type="text" id="gradYear" class="form-control  input-lg" placeholder="Grad Year" required>
+                              <select id="studyLevel" class="selectpicker input-lg form-control" title="Level of Study" required>
+                                  <option value="High School / Secondary School"> High School / Secondary School </option><option value="University (Undergraduate)"> University (Undergraduate) </option><option value="University (Graduate)"> University (Graduate) </option><option value="Other"> Other </option>
+                              </select>
                           </div>
                       </div>
                       <div class="col-md-6">
@@ -105,20 +102,63 @@
                                     <span class="input-group-btn">
                                         <button class="browse btn btn-primary input-lg" type="button"><i class="fa fa-search"></i> Browse</button>
                                     </span>
-                                    <input type="file" class="file"required>
+                                    <input id="resume" type="file" class="file"required>
                                 </div>
                             </div>
                       </div>
                   </div>
-
+                  <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <select id="pInterest"class="selectpicker input-lg form-control" title="Professional Interests" required>
+                                <option value="None"> None </option><option value="Internship"> Internship </option><option value="Fulltime"> Fulltime </option><option value="Both"> Both </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="interest" class="form-control  input-lg" placeholder="Interests (Optional)">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <select id="dRestriction" class="selectpicker input-lg form-control" title="Dietary Restrictions" required>
+                                <option value="None"> None </option><option value="Vegetarian"> Vegetarian </option><option value="Vegan"> Vegan </option><option value="Gluten Free"> Gluten Free </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <select id="shirtSize" class="selectpicker input-lg form-control" title="Shirt Size" required>
+                                <option value="S"> S </option><option value="M"> M </option><option value="L"> L </option><option value="XL"> XL </option>
+                            </select>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <select id="beginner" class="selectpicker input-lg form-control" title="Are You A Beginner?" required>
+                                <option value="Yes"> Yes </option><option value="No"> No </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group form-group">
+                            <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-linkedin"></i>   linkedin.com/in/</span>
+                            <input type="text" id="linkedin" class="form-control  input-lg" placeholder="username " aria-describedby="sizing-addon2">
+                        </div>
+                    </div>
+                  </div>
                       <div class="clearfix"></div>
                       <div class="col-lg-12 text-center">
-                          <div id="success"></div>
+                          <div id="firebaseSuccess"></div>
                           <button class="btn btn-info btn-lg" type="submit">Submit <i class="fa fa-chevron-right"></i></button>
                       </div>
               </form>
-    		<!-- </div> -->
-    	</div>
-    </div>
+    	    </div>
+      </div>
     </div>
 </div>
