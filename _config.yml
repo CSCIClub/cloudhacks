@@ -1,5 +1,5 @@
-url: https://hackscsu.com
-enforce_ssl: hackscsu.com
+url: https://csciclub.github.io
+baseurl: /hackscsu/
 
 # Site settings
 title: HackSCSU
