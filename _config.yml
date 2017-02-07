@@ -2,10 +2,9 @@ url: https://csciclub.github.io
 baseurl: /hackscsu/
 
 # Site settings
-title: HackSCSU
+title: CloudHacks
 email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-
+description: "CloudHacks is 24-hour student-run Hackathon hosted at St. Cloud State University."
 
 # Team names, titles and social links
 people:
