@@ -97,13 +97,7 @@
                       </div>
                       <div class="col-md-6">
                             <div class="form-group">
-                                <div class="input-group form-group">
-                                    <input type="text" class="form-control input-lg" placeholder="Upload Resume" disabled style="cursor: default;">
-                                    <span class="input-group-btn">
-                                        <button class="browse btn btn-primary input-lg" type="button"><i class="fa fa-search"></i> Browse</button>
-                                    </span>
-                                    <input id="resume" type="file" class="file"required>
-                                </div>
+                                    <input type="file" id="resume" class="filestyle" data-buttonName="btn-primary" data-size="lg" data-placeholder="Upload Resume (PDF)" data-buttonText="Browse" data-iconName="glyphicon glyphicon-search" accept=".pdf" required>
                             </div>
                       </div>
                   </div>
@@ -154,7 +148,7 @@
                   </div>
                       <div class="clearfix"></div>
                       <div class="col-lg-12 text-center">
-                          <div id="firebaseSuccess"></div>
+                          <div id="firebaseResult"></div>
                           <button class="btn btn-info btn-lg" type="submit">Submit <i class="fa fa-chevron-right"></i></button>
                       </div>
               </form>

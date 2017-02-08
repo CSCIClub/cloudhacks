@@ -963,13 +963,6 @@ button.close-modal {
     border: 2px solid #dce4ec;
 }
 
-input[type="file"] {
-    opacity: 0;
-    height: 50px;
-    max-width: 5px;
-    position: absolute;
-}
-
 html {
    overflow-x: hidden;
    overflow-y: auto;
