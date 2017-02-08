@@ -965,6 +965,6 @@ input[type="file"] {
 }
 
 html {
-  overflow: hidden;
-  height: 100%;
+   overflow-x: hidden;
+   overflow-y: auto;
 }
