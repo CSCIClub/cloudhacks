@@ -24,3 +24,9 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$(document).ready(function() {
+  if(window.location.href.indexOf('#register') != -1) {
+    $('#register').modal('show');
+  }
+});

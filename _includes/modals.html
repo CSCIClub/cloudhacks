@@ -40,7 +40,9 @@
 {% endfor %}
 <div class="portfolio-modal modal fade" id="register" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-        <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <a href="" onclick="$('#register').modal('hide')">
+        <button type="button" class="close-modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </a>
         <div class="container">
         <div class="centered-form">
               <form name="registration-form" id="regForm">
