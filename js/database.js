@@ -5,6 +5,7 @@ var regForm = document.getElementById('regForm');
 var fnameInput = document.getElementById('fname');
 var lnameInput = document.getElementById('lname');
 var emailAddressInput = document.getElementById('emailAdd');
+var passwordInput = document.getElementById('inputPasswordConfirm');
 var githubInput = document.getElementById('github');
 var schoolInput = document.getElementById('school');
 var majorSubInput = document.getElementById('majorSub');
@@ -19,6 +20,28 @@ var linkedinInput = document.getElementById('linkedin');
 var firebaseResult = document.getElementById("firebaseResult");
 var resumeFile = null;
 var resumeUrl;
+
+function handleSignUp(evt) {
+    // Sign in with email and pass.
+    var email = emailAddressInput.value;
+    var password = passwordInput.value;
+    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // [START_EXCLUDE]
+      if (errorCode == 'auth/email-already-in-use') {
+        displayResult("already registered", "alert-danger");
+        return;
+      }
+      else {
+        console.log(errorCode);
+        console.log(errorMessage);
+      }
+    });
+    handelSubmit(evt);
+    // [END createwithemail]
+}
 
 function addDataToFirebase(fname, lname, email, repEmail, github, school, majorSub, studyLevel, resumeUrl, pInterest, interest, dRestriction, shirtSize, beginner, linkedin) {
 
@@ -62,6 +85,7 @@ function handelSubmit(evt) {
   var fname = fnameInput.value;
   var lname = lnameInput.value;
   var email = emailAddressInput.value;
+  var password = passwordInput.value;
   var github = githubInput.value;
   var school = schoolInput.value;
   var majorSub = majorSubInput.value;
@@ -127,17 +151,8 @@ function displayResult(message, message_type) {
     + "<strong>" + display_message + "</strong>"
     + "</div>";
 }
+
 window.onload = function() {
   resumeInput.addEventListener('change', handleFileSelect, false);
-  regForm.addEventListener('submit', handelSubmit, false);
-  resume.disabled = true;
-  auth.onAuthStateChanged(function(user) {
-    if (user) {
-      resume.disabled = false;
-    } else {
-      // console.log('There was firebase session. Creating a new session.');
-      // Sign the user in anonymously since accessing Storage requires the user to be authorized.
-      auth.signInAnonymously();
-    }
-  });
+  regForm.addEventListener('submit', handleSignUp, false);
 }
