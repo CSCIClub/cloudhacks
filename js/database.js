@@ -39,18 +39,11 @@ function addDataToFirebase(fname, lname, email, repEmail, github, school, majorS
     linkedin: "https://linkedin/in/"+linkedin,
   }, function (error) {
     if (error) {
-      firebaseResult.innerHTML = "<div class='alert alert-danger'>"
-        + "<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>"
-        + "<strong>Registration Unsuccessful. </strong>"
-        + "</div>";
-      regForm.reset();
+      displayResult("unsucessful", "alert-danger");
       // console.error(error);
     }
     else {
-      firebaseResult.innerHTML = "<div class='alert alert-success'>"
-        + "<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>"
-        + "<strong>Registration Successful. </strong>"
-        + "</div>";
+      displayResult("successful", "alert-success");
       regForm.reset();
     }
   });
@@ -105,21 +98,34 @@ function handelSubmit(evt) {
               });
         }
         else {
-          firebaseResult.innerHTML = "<div class='alert alert-danger'>"
-            + "<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>"
-            + "<strong>Looks like you are already registered. If you think it's a mistake please contact us.</strong>"
-            + "</div>";
-          regForm.reset();
+          displayResult("already registered", "alert-danger");
         }
     });
   }
   else {
-    firebaseResult.innerHTML = "<div class='alert alert-danger'>"
-      + "<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>"
-      + "<strong>Resume file size is too big. Make sure you resume file is no bigger than 2 MB </strong>"
-      + "</div>";
+    displayResult("big file", "alert-danger");
   }
 
+}
+
+function displayResult(message, message_type) {
+  if (message=="unsucessful") {
+    var display_message = "Registration Unsuccessful. ";
+  }
+  else if (message == "successful") {
+    var display_message = "Registration Successful. ";
+  }
+  else if (message == "already registered") {
+    var display_message = "Looks like you are already registered. If you think it's a mistake please contact us. ";
+  }
+  else if (message = "big file") {
+    var display_message = "Resume file size is too big. Make sure you resume file is no bigger than 2 MB. ";
+  }
+
+  firebaseResult.innerHTML = "<div class='alert " + message_type + "'>"
+    + "<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>"
+    + "<strong>" + display_message + "</strong>"
+    + "</div>";
 }
 window.onload = function() {
   resumeInput.addEventListener('change', handleFileSelect, false);
