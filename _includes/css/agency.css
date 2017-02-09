@@ -967,3 +967,23 @@ html {
    overflow-x: hidden;
    overflow-y: auto;
 }
+
+.form-control {
+    color: #555;
+}
+
+input::-webkit-input-placeholder {
+color: #555 !important;
+}
+
+input:-moz-placeholder {
+color: #555 !important;
+}
+
+input::-moz-placeholder {
+color: #555 !important;
+}
+
+input:-ms-input-placeholder {
+color: #555 !important;
+}
