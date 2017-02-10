@@ -241,6 +241,7 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
+        background-color: rgba(34, 34, 34, 0.34);
     }
 
     .navbar-default .navbar-brand {
@@ -266,25 +267,14 @@ fieldset[disabled] .btn-xl.active {
 
 header {
     text-align: center;
-    color: #{{ site.data.template.color.primary }};
-    background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    color: #fff;
+    background-color: #2e3141;
+    height: 100vh;
 }
 
 header .overlay {
     background: rgba(0, 0, 0, 0.7);
     padding-top: 15%;
-}
-
-header .intro-text {
-    padding-top: 5%;
-    padding-bottom: 10%;
 }
 
 header .intro-text .intro-lead-in {
@@ -304,11 +294,15 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+header .intro-text .intro-minor {
+    margin-bottom: 25px;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
 @media(min-width:768px) {
-    header .intro-text {
-        padding-top: 15%;
-        padding-bottom: 25%;
-    }
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
@@ -727,6 +721,8 @@ section#contact .text-danger {
 footer {
     padding: 25px 0;
     text-align: center;
+    background-color: #2e3141;
+    color: #fff;
 }
 
 footer span.copyright {
@@ -785,6 +781,7 @@ ul.social-buttons li a:active {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    background-color: #2e3141;
 }
 
 .portfolio-modal .modal-content h2 {
@@ -873,6 +870,11 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+#sponsors {
+    background: #2e3141;
+    color: #fff;
 }
 
 #sponsors .sponsor[square] {
@@ -969,21 +971,41 @@ html {
 }
 
 .form-control {
-    color: #555;
+    background-color: #2e3141;
+    color: #ecf0f1;
+    border-width: 1px;
 }
 
 input::-webkit-input-placeholder {
-color: #555 !important;
+color: #ecf0f1 !important;
 }
 
 input:-moz-placeholder {
-color: #555 !important;
+color: #ecf0f1 !important;
 }
 
 input::-moz-placeholder {
-color: #555 !important;
+color: #ecf0f1 !important;
 }
 
 input:-ms-input-placeholder {
-color: #555 !important;
+color: #ecf0f1 !important;
+}
+
+#particles-js {
+    width: 100%;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.input-group .form-control {
+    background-color: #2e3141;
+}
+
+.input-group-addon {
+    background-color: #2e3141
 }
