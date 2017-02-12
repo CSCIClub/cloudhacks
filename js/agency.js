@@ -29,4 +29,7 @@ $(document).ready(function() {
   if(window.location.href.indexOf('#register') != -1) {
     $('#register').modal('show');
   }
+  if(window.location.href.indexOf('#login') != -1) {
+    $('#login').modal('show');
+  }
 });

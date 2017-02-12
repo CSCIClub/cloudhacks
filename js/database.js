@@ -59,7 +59,7 @@ function addDataToFirebase(fname, lname, email, repEmail, github, school, majorS
     dietary_restriction: dRestriction,
     shirt_size: shirtSize,
     beginner: beginner,
-    linkedin: "https://linkedin/in/"+linkedin,
+    linkedin: "https://linkedin.com/in/"+linkedin,
   }, function (error) {
     if (error) {
       displayResult("unsucessful", "alert-danger");
