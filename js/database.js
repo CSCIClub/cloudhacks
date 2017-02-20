@@ -108,7 +108,7 @@ function handelSubmit(evt) {
         if (!snapshot.hasChild(repEmail)) {
 
               // Upload resume to firebase storage.
-              storageRef.child('resumes/' + repEmail + "/" + resumeFile.name).put(resumeFile, metadata).then(function(snapshot) {
+              storageRef.child('resumes/' + repEmail + "/" + resume.pdf).put(resumeFile, metadata).then(function(snapshot) {
                 // console.log('Uploaded', snapshot.totalBytes, 'bytes.');
                 // console.log(snapshot.metadata);
                 resumeUrl = snapshot.downloadURL;
