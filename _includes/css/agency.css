@@ -19,7 +19,7 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.75;
 }
 
@@ -1013,4 +1013,26 @@ color: #ecf0f1 !important;
 
 #updateContainer {
   display: none;
+}
+
+.about-icons div i {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    font-size: 50px;
+    line-height: 100px;
+    outline: 0;
+    color: #fff;
+    background-color: #3388d6;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.about-stack {
+    position: relative;
+    display: inline-block;
+    line-height: 2em;
+    vertical-align: middle;
 }
