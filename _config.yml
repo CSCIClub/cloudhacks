@@ -5,28 +5,6 @@ title: CloudHacks
 email: csciclub@csci.club
 description: "CloudHacks is 24-hour student-run Hackathon hosted at St. Cloud State University."
 
-# Team names, titles and social links
-people:
-- name: Suyash Bhatt
-  pic: 1
-  position: Lead Coordinator
-  social:
-    - title: twitter
-      url: https://twitter.com/suyash1629
-    - title: github
-      url: https://github.com/suyash1629
-
-- name: Jeff Witthuhn
-  pic: 2
-  position: Lead Planner
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
-
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
