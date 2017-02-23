@@ -1,39 +1,15 @@
-Agency Jekyll theme
-====================
-
-Agency theme based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
+This repository is dedicated for CloudHacks hackathon website. Website uses Jekyll framework to generate static site.
 
 # How to use
-
-###Portfolio 
-
-Portfolio projects are in '/_posts'
-
-Images are in '/img/portfolio'
-
-###About
-
-Images are in '/img/about/'
-
-###Team
-
-Team members and info are in '_config.yml'
-
-Images are in '/img/team/'
-
-
-# Demo
-
-View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
-
-=========
-For more details, read [documentation](http://jekyllrb.com/)
+* Install Jekyll. For more details, read [Jekyll documentation](http://jekyllrb.com/docs/installation/)
+* Serve the website with `jekyll serve`
+* Access the served website in localhost port 4000. localhost:4000
 
 # Running in a docker container
 
 ```
-docker build . -t hackscsu-jekyll
+docker build . -t cloudhacks-jekyll
 
 # run container and only expose on your pc
-docker run -p "0.0.0.o:4000:4000" hackscsu-jekyll:latest
+docker run -p "0.0.0.0:4000:4000" cloudhacks-jekyll:latest
 ```
