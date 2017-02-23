@@ -874,8 +874,9 @@ body {
 }
 
 #sponsors {
-    background: #2e3141;
-    color: #fff;
+    /*background: #2e3141;*/
+    background: #f7f7f7;
+    /*color: #fff;*/
 }
 
 #sponsors .sponsor[square] {
@@ -1035,4 +1036,21 @@ color: #ecf0f1 !important;
     display: inline-block;
     line-height: 2em;
     vertical-align: middle;
+}
+
+.card {
+    text-align: left;
+    border-radius: 6px;
+    padding-bottom: 10px;
+    padding-top: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+    background: white;
+    color: #333;
+}
+
+#faq {
+    color: white;
+    background-color: #2e3141;
 }
